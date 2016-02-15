@@ -119,11 +119,12 @@ li {
 	margin-left: 5%;
 }*/
 
-.mainTextTry {
+.mainText, .mainTextTry {
 	/*float: left;*/
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	    font-size: 1.5em;
+	font-size: 1.5em;
+	margin: 10%;
 	text-shadow: 2px 2px 2px #1b2331;
 }
 
@@ -136,7 +137,7 @@ li {
 	padding-bottom: 3%;
 }
 
-.captionForm {margin-top: 10%;}
+.captionForm {margin: 10% auto;}
 
 
 .oldCaption {
@@ -190,6 +191,14 @@ input[type=textarea], [type=text]{
 	font-size: 1em;
 
 }
+.artistName {
+	    position: relative;
+    left: -2px;
+}
+.size {
+	position: relative;
+  left: -5px;
+}
 
 .bContact {
 	float: right;
@@ -201,10 +210,6 @@ input[type=textarea], [type=text]{
 
 .bContact a {
 	color: #f0f481;
-}
-
-.captionBtn {
-	/*margin-left: 38%;*/
 }
 
 .postEmail {
@@ -277,7 +282,7 @@ footer ul {
 }
 
 @media (max-width: 992px) {
-	/*.container{max-width: 970px;}*/
+	input {max-width: 220px;}
 }
 
 @media (max-width: 768px){

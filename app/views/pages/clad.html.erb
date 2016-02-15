@@ -3,8 +3,6 @@
 <head>
 	<title>Try Us Out</title>
 
-	<script type="text/javascript" src="../js/libs/jquery.js"></script>
-	<!--<script type="text-javascript" src="../js/libs/parsley.js"></script>-->
 	<script type="text/javascript" src="../js/libs/api.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
 	<link rel="stylesheet" href="../css/main.css">
@@ -14,68 +12,64 @@
 <body>
 	<div class="mainContainer">
 		<div class="bgSlide">		
-			<h1><a href="../index.html"> clad & co.</a></h1> 
-				<div class="mainMenu">
-					<ul>
-						<li><a href="../index.html">About</a></li>
-						<li><a href="TryIt.html">Try It</a></li>
-						<li><a href="contact.html">Inquiries</a></li>
-						<li class="contact">Contact</li>
-					</ul>	
-				<div class="clear"></div>
-			</div> <!-- mainMenu -->
+				
+		<div class="container">
 		<div class="mainTextTry">
-			<p>Here we are at an example admin section that clad & co. would develop for you and your site. Below are some images of the Brooklyn Museum's collection and their captions. With clad & co. you can edit or completely change these captions. Think of this as the back door of your website. Enter in any caption of any artist, from any year with any medium and see first-hand just how easy it is.</p>
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<p>Here we are at an example admin section that clad & co. would develop for you and your site. Below are some images of the Brooklyn Museum's collection and their captions. With clad & co. you can edit or completely change these captions. Think of this as the back door of your website. Enter in any caption of any artist, from any year with any medium and see first-hand just how easy it is.</p>
+				</div>
+			</div> <!-- row -->
 
-		<br>
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">	
+					<div class="captionForm col-sm-12">
+						<label for="Name"></label>
+						<input type="text" class="artistName" placeholder="Artist's Name" required/>,
+						
+						<label for="Title"></label>
+						<input type="text" class="title" placeholder="Title">,
+						
+						<label for="Year"></label>
+						<input type="text" class="year" placeholder="Year">,
+						
+						<label for="Medium"></label>
+						<input type="textarea" class="medium" placeholder="Medium"/>, 
+						
+						<label for="Size"></label>
+						<input type="text" class="size" placeholder="Size"> 
+						
+						<div class="clear"></div>
+					</div>  <!-- captionForm -->	
+				</div> 
+			</div> <!-- row -->
 
-		<div class="captionForm">
-			<label for="Name"></label>
-			<input type="text" class="artistName" placeholder="Artist's Name" required/>,
-			
-			<label for="Title"></label>
-			<input type="text" class="title" placeholder="Title">,
-			
-			<label for="Year"></label>
-			<input type="text" class="year" placeholder="Year">,
-			
-			<label for="Medium"></label>
-			<input type="textarea" class="medium" placeholder="Medium"/>, 
-			
-			<label for="Size"></label>
-			<input type="text" class="size" placeholder="Size"> 
-			
-			<div class="clear"></div>
-		</div>  <!-- captionForm -->	
-		 <br>
+		 
 		 <button class="captionBtn">Caption</button>
 		</div> <!-- mainTextTry -->
 
-		<div class="slide">
-			<img class= "imgTry"/>	
+<!-- 2ND COL -->
+		<div class="">
+				<div class="">
+					<img class= "imgTry"/>	
 
-			<div class="clear"></div>
-
-			<div class="oldCaption"></div> 
+					<div class="oldCaption"></div> 
+				</div>
+				<div class="messageArea"></div><!-- messageArea -->
 		</div>
-		<div class="messageArea"></div><!-- messageArea -->
 
+</div>
 
-			<div class="bContact">
-			<p>Contact</p>
-			<p>General inquires</p>
-			<p><a href="contact.html">info@clad.com</a></p>
-			<div class="clear"></div>
-			</div>  <!-- bContact -->
+			
 
-		<footer>
+		<!-- <footer>
 				<ul>
 					<li><a href="../index.html">About</a></li>
 					<li><a href="TryIt.html">Try It</a></li>
 					<li><a href="contact.html">Inquiries</a></li>
 					<li class="contact"><a href="contact.html">Contact</a></li>
 				</ul>
-		</footer>
+		</footer> -->
 
 		</div>  <!-- bgSlide -->
 	</div> <!-- mainContainer -->

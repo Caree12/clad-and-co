@@ -8,11 +8,17 @@
 </head>
 <body>
 
-<%= link_to 'Home', root_path %> 
-<%= link_to 'Try It Out', clad_path %> 
-<%= link_to 'Contact', contact_path%>
 
-<%= yield %>
 
+	<!-- <div class="container"> -->
+		<!-- CONTENT -->
+		<%= render 'layouts/header' %>
+		
+		<%= yield %>
+
+		<%= render 'layouts/footer' %>
+
+
+	<!-- </div> -->
 </body>
 </html>

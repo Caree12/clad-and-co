@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
-  get 'try-it-out'=> 'pages#try' #the second part of this command 'pages#try-it' is the call to the embedded ruby, this is the part that has to match your .html.erb
+  get 'clad'=> 'pages#clad' #the second part of this command 'pages#try-it' is the call to the embedded ruby, this is the part that has to match your .html.erb
   get 'contact' => 'pages#contact'
   
 

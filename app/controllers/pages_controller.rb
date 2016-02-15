@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
   end
-  def try
+  def clad
   end
   def contact
   end

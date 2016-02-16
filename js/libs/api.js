@@ -1,5 +1,5 @@
 var imageData = {};
-    // imageData.contentSrc;
+    imageData.uri;
 function getImages(){
 	$.ajax({
 		method: "GET",
@@ -86,12 +86,13 @@ function assignBackUp(){
 }
 
 function buildGallery(){ //this builds all the images
-    // for(var x=0; x<imageData.length; x++)
-        $('#imgTry').attr('src', imageData[0].uri);
+    for(var x=0; x<imageData.length; x++) //loops through all the images and stops at 9
+        $('#imgTry').attr('src', imageData[x].uri);
       captionInfo();
 };
 
 function captionInfo(){
-        $('#oldCaption').append(imageData[0].caption + ', ' + imageData[0].credit);
+        for(var x=0; x<imageData.length; x++)
+        $('#oldCaption').append(imageData[x].caption + ', ' + imageData[x].credit);
 };
 getImages(); 

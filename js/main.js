@@ -4,8 +4,10 @@ var name,
 	medium,
 	size;
 
-$(document).ready(function(){
+var x = 0;
 
+$(document).ready(function(){
+		addListeners();
 	$(window).scroll(function(e){
     	parallax();
 	});
@@ -31,7 +33,7 @@ $(document).ready(function(){
     	var scrolled = $(window).scrollTop();
         //console.log(scrolled);
         //$('#bgContainer').css('top', -(scrolled * .2) + 'px');
-}
+	}
 
 	$('#contact').on('click', function(){
 		$('#mainText').slideUp("slow");
@@ -51,6 +53,32 @@ $('form').mouseover(function(){
 		$('h2').css("color", "#1b2331");
 	});
 	
+
+
+
+  $('#nextBtn').on('click', function slideshow(index){
+  		x++
+
+		if(x==imageData.length){
+		 	x=0;
+		};//reset 
+
+		$('#imgTry').attr('src', imageData[x].uri);
+
+		console.log(imageData[x]);
+
+	 });//closes #nextBtn
+
+	$('#backBtn').on('click', function slideshow(index){
+		x-- 
+		if(x==imageData[0]){
+		 	x=imageData[imageData.length-1]; 
+		 };//reset 
+  			$('#imgTry').replaceWith("<img src='" + imageData[x].uri + "' />");
+
+  			console.log(imageData[x]);
+  	});  // .backbtn close
+
 }); 
 
 function getName(){
@@ -82,9 +110,14 @@ function reset($form){  //$form here could be any word like pony, but it referen
 	$form.find('input, textarea').val(''); //this puts the value of input fields to an empty string or ''
 };
 
-//function carouselImg(){
-	//this will give the user a choice of which img they want to change to on the Try It page
-// };
+
+
+
+function addListeners(){
+	
+};
+	// this will give the user a choice of which img they want to change to on the Try It page
+
 
 
 

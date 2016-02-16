@@ -1,9 +1,9 @@
-#mainContainer {
+.mainContainer {
 	background-color: #1b2331; /*WILL NEED TO FIX THIS AS SLIDE WORKS*/
 	/*z-index: 0; not getting this top slide until AFTER the background img for some reason*/
 }
 
-#bgContainer {
+.bgContainer {
 	background-image: url(../img/LightBulb.jpg); 
 	width: 100%;
 	height: 90%;
@@ -15,7 +15,7 @@
 	z-index: -1;
 }
 
-#bgSlide {
+.bgSlide {
 	background-image: url(../img/TopSlide1.jpg);
 	width: 100%;
 	background-size: 100% auto;  /*why does this go squirrely when height=100%*/
@@ -24,23 +24,23 @@
 	z-index: -1;
 }
 
-#bgPost {
+.bgPost {
 	position: relative;
 	width:100%;
 }
 
-#bgPost img {
+#.gPost img {
 	width: 100%;
 }
 
-#bgPost .stickIt {
+.bgPost .stickIt {
 	float: left;
 	/*position:absolute;*/
 	bottom: 50px;
 	width: 100%;
 }
 
-#mainContainer, #bgContainer {
+.mainContainer, #bgContainer {
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -80,11 +80,11 @@ ul, body {
 	list-style-type: none;
 }
 
-#mainMenu a {
+.mainMenu a {
 	color: white;
 }
 
-#mainMenu ul {
+.mainMenu ul {
 	list-style-type: none;
 	float: right;
 	padding: 0;
@@ -96,7 +96,7 @@ a {
 	text-decoration: none;
 }
 
-#mainMenu a:hover, li:hover, li:active, #bContact a:hover {
+.mainMenu a:hover, li:hover, li:active, .bContact a:hover {
 	color: #75b3d7;
 	cursor: pointer;
 	text-decoration: none;
@@ -111,17 +111,17 @@ li {
 	clear: both;
 }
 
-#mainText, #mainTextTry {
+.mainText, .mainTextTry {
 	width: 40%;
 	margin-left: 5%;
 }
 
-#mainTextTry {
+.mainTextTry {
 	float: left;
 	text-shadow: 2px 2px 2px #1b2331;
 }
 
-#imgTry {
+.imgTry {
 	float: right;
 	width: 40%;
 	max-height: 700px;
@@ -130,19 +130,19 @@ li {
 	padding-bottom: 3%;
 }
 
-#captionForm {
+.captionForm {
 	margin-top: 25%;
 }
 
-#oldCaption {
+.oldCaption {
 	width: 40%;
 }
 
- #messageArea {
+ .messageArea {
  	margin-right: 10%;
  }
 
- #oldCaption, #messageArea {
+ .oldCaption, .messageArea {
 	margin-left: 56%;
 	padding-bottom: 5%;
 	color: #f0f481;
@@ -180,14 +180,14 @@ input[type=textarea], [type=text]{
 
 }
 
- #emailBox {
+ .emailBox {
 	text-align: left;
 	vertical-align: top;
 	font-size: 1em;
 
 }
 
-#bContact {
+.bContact {
 	text-align: right;
 	margin-right: 5%;
 	color: #f0f481;
@@ -195,7 +195,7 @@ input[type=textarea], [type=text]{
 	
 }
 
-#bContact a {
+.bContact a {
 	color: #f0f481;
 }
 /*
@@ -203,16 +203,16 @@ input[type=textarea], [type=text]{
 	color: #75b3d7;
 }*/
 
-#captionBtn {
+.captionBtn {
 	margin-left: 38%;
 }
 
-#postEmail {
+.postEmail {
 	margin-top: 0%;
 	text-align: center;
 }
 
-.hide {
+.hidden {
 	visibility: none;
 }
 
@@ -234,7 +234,7 @@ form:hover {
   /*visibility: visible;*/
 }
 
-#postItBtn {
+.postItBtn {
 	width: 30em;
 	line-height: 1em;
 	text-align: left;
@@ -269,11 +269,11 @@ footer ul {
 
 @media screen and (max-width: 768px){
 	
-	#bgContainer {
+	.bgContainer {
 		height: 60%;
 	}
 
-	#mainMenu li {
+	.mainMenu li {
 		display:block;
 		font-size: 1.25em;
 		text-shadow: 2px 2px 2px #1b2331;
@@ -285,7 +285,7 @@ footer ul {
 
 	}
 
-	#mainText {
+	.mainText {
 		width: 60%;
 	}
 
@@ -301,18 +301,18 @@ footer ul {
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
 
-	#mainContainer {
+	.mainContainer {
 		width: 100%;
 		background-repeat: no-repeat;
 	}
 
-	#mainMenu li {
+	.mainMenu li {
 		display:block;
 		font-size: 1.25em;
 		text-shadow: 2px 2px 2px #1b2331;
 	}
 
-	#mainText, #mainTextTry {
+	.mainText, .mainTextTry {
 		width:90%;
 		clear: both;
 	}
@@ -323,7 +323,7 @@ footer ul {
 		margin-left: 5%;
 	}
 
-	#oldCaption, #messageArea {
+	.oldCaption, .messageArea {
 		margin-left: 5%;
 		width: 90%;
 	}
@@ -333,7 +333,7 @@ footer ul {
 		font-size: 2em;
 	}
 
-	#postItBtn {
+	.postItBtn {
 		width: 81%;
 	}
 

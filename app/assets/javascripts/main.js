@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$(window).scroll(function(e){
     	parallax();
 	});
-});
+// }); ready
 
 $('.contactEmail').submit(function(event){
 	event.preventDefault();
@@ -50,6 +50,28 @@ $('form').mouseover(function(){
 $('form').mouseout(function(){
 	$('h2').css("color", "#1b2331");
 });
+
+
+$('#nextBtn').on('click', function slideshow(index){
+  		x++
+
+		if(x==imageData.length){
+		 	x=0;
+		};//reset 
+
+		$('#imgTry').attr('src', imageData[x].uri);
+		console.log(imageData[x]);
+	 });//closes #nextBtn
+
+$('#backBtn').on('click', function slideshow(index){
+		x-- 
+		if(x==imageData[0]){
+		 	x=imageData[imageData.length-1]; 
+		 };//reset 
+  			$('#imgTry').replaceWith("<img src='" + imageData[x].uri + "' />");
+
+  			console.log(imageData[x]);
+  	});  // .backbtn close
 
 
 

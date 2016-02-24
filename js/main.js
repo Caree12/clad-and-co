@@ -97,7 +97,7 @@ function getSize(){
 		};
 
 function writeCaption(caption){
-		$('.oldCaption').hide();
+		$('.oldCaption').hide(); //remove prolly better option here
 		$('.messageArea').html("<p>" + caption + "</p>");
 		};
 
